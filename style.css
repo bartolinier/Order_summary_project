@@ -26,7 +26,7 @@ html{
     height:100vh;
     margin:0;
     padding:0;
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(./images/pattern-background-desktop.svg);
     background-color:var(--pale-blue);
     background-repeat: no-repeat;
     display: flex;
@@ -57,7 +57,7 @@ html{
     display:flex;
     flex-direction: column;
     border-radius: 25px 25px 0px 0px;
-    background-image: url(/images/illustration-hero.svg);
+    background-image: url(./images/illustration-hero.svg);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -195,7 +195,7 @@ html{
 .container{
     height:100vh;
     width:375px;
-    background-image: url(/images/pattern-background-mobile.svg);
+    background-image: url(./images/pattern-background-mobile.svg);
 }
 
 /* MAIN CONTENT */
