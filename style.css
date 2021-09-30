@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+/* CONTAINER */
+.container{
+    position:relative;
+    width:1440px;
+    height:100vh;
+    margin:0;
+    padding:0;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-color:var(--pale-blue);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN CONTENT */
+.main-content{
+    position:absolute;
+    background-color: #FFFFFF;
+    height:80vh;
+    width: 25vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:25px 25px 25px 25px;
+    box-shadow: 0 4px -2px -2px var(--dark-blue);
+
+}
+
+/* TOP IMAGE */
+.main-content-top{
+    position:absolute;
+    height: 33%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    border-radius: 25px 25px 0px 0px;
+    background-image: url(/images/illustration-hero.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+/* SUMMARY MESSAGE */
+.summary{
+    position:absolute;
+    width:70%;
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    top:40%;
+    
+}
+
+.order-summary{
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;   
+    color:var(--dark-blue);
+}
+
+.message{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color:var(--desaturated-blue);
+
+}
+
+/* ANNUAL PLAN DETAILS */
+.annual-plan-box{
+    position:absolute;
+    width:80%;
+    height:13%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding:15px;
+    background-color: var(--very-pale-blue);
+    top: 60%;
+}
+
+
+
+.annual-cost{
+    
+    display:flex;
+    height:40px;
+    flex-direction: column;
+    justify-content: space-between; 
+    transform: translateX(-20px);
+}
+
+.annual-plan-txt{
+    font-size: 15px;
+    font-weight: 900;
+    color:var(--dark-blue);
+    
+   
+}
+
+.cost-per-year{
+    font-size: 15px;
+    color:var(--desaturated-blue);
+   
+}
+
+.change{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:12px;
+    font-weight: 700; 
+}
+
+.change-link{
+   color: var(--bright-blue);
+
+}
+
+.change-link:hover{
+    color: #766DF1;
+ 
+ }
+
+ /* PROCEED LINK*/
+.proceed-link{
+    position:absolute;
+    width:80%;
+    height: 7.5%;
+    top: 80%;
+    border-radius: 10px;
+    background-color: var(--bright-blue);
+    color:var(--very-pale-blue);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    box-shadow: 0px 20px 20px var(--pale-blue);
+}
+
+.proceed-link:hover{
+    background-color: #766DF1;
+  
+}
+
+/* CANCEL ORDER */
+.cancel-order{
+    position:absolute;
+    top: 90%;
+    color:var(--desaturated-blue);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.cancel-order:hover{
+    color:var(--dark-blue);
+}
+
+/* -------------------------------------------------------- */
+/* MEDIA */
+
+@media screen and (max-width:375px) {
+
+/* CONTAINER */
+.container{
+    height:100vh;
+    width:375px;
+    background-image: url(/images/pattern-background-mobile.svg);
+}
+
+/* MAIN CONTENT */
+.main-content{
+    width:85vw;
+    height: 80vh;
+    border-radius:10px 10px 10px 10px;
+    box-shadow: 0 5px 50px -30px var(--dark-blue);
+
+}
+/* TOP IMAGE */
+.main-content-top{
+    border-radius:10px 10px 0px 0px;  
+    height: 28%;
+}
+/* SUMMARY MESSAGE */
+.summary{
+  width:80%; 
+  height:30%; 
+  top:33%;
+}
+.message{
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* ANNUAL PLAN DETAILS */
+.annual-plan-box{
+   top:57%;
+   width:90%;
+   height:15%;
+}
+
+.annual-cost{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    transform: translateX(-15px);
+}
+
+.annual-plan-txt{
+    font-size: 14px;
+    font-weight: 900;
+
+}
+
+.cost-per-year{
+    font-size: 14px;
+    color:var(--desaturated-blue);
+   
+}
+
+ /* PROCEED LINK*/
+ .proceed-link{
+    top: 77%;
+    height: 9%;
+    width:90%;
+    font-size: 15px;
+}
+
+/* CANCEL ORDER */
+.cancel-order{
+    top: 90%;
+    font-size:14px;
+}
+
+}
+
