@@ -19,6 +19,9 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 Users should be able to:
 
 - See hover states for interactive elements
+- Two breakpoints:
+Desktop: 1440px
+Mobile: 375px
 
 ### Links
 
