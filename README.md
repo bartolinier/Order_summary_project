@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/bartolinier/Order_summary_project
+- Solution URL: https://bartolinier.github.io/Order_summary_project/#
 
 
 ## My process
